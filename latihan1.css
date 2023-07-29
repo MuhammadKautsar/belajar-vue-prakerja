@@ -1,0 +1,64 @@
+/* Kode CSS untuk class "container" */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Kode CSS untuk class "content" */
+.content {
+    flex-basis: calc(33.33% - 10px); /* Mengisi 3 kolom, dikurangi jarak 10px antara kolom */
+    height: 50px;
+}
+
+/* Kode CSS untuk tampilan menjadi 2 kolom 3 baris ketika lebar kurang dari 960px */
+@media (max-width: 959px) {
+    .content {
+        flex-basis: calc(50% - 10px); /* Mengisi 2 kolom, dikurangi jarak 10px antara kolom */
+    }
+}
+
+/* Kode CSS untuk tampilan menjadi 3 kolom 2 baris ketika lebar lebih atau sama dengan 960px */
+@media (min-width: 960px) {
+    .content {
+        flex-basis: calc(33.33% - 10px); /* Mengisi 3 kolom, dikurangi jarak 10px antara kolom */
+    }
+}
+
+/* Kode CSS untuk tampilan berjejer ke bawah ketika lebar kurang dari 600px */
+@media (max-width: 600px) {
+    .content {
+        flex-basis: 100%; /* Mengisi 1 kolom penuh */
+    }
+}
+
+/* Kode CSS untuk class "content" dengan ID "red" */
+#red {
+    background-color: #ff0000; /* Merah */
+}
+
+/* Kode CSS untuk class "content" dengan ID "green" */
+#green {
+    background-color: #00ff00; /* Hijau */
+}
+
+/* Kode CSS untuk class "content" dengan ID "blue" */
+#blue {
+    background-color: #0000ff; /* Biru */
+}
+
+/* Kode CSS untuk class "content" dengan ID "yellow" */
+#yellow {
+    background-color: #ffff00; /* Kuning */
+}
+
+/* Kode CSS untuk class "content" dengan ID "purple" */
+#purple {
+    background-color: #800080; /* Ungu */
+}
+
+/* Kode CSS untuk class "content" dengan ID "grey" */
+#grey {
+    background-color: #808080; /* Abu-abu */
+}
